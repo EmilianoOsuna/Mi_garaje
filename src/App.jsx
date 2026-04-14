@@ -9,6 +9,7 @@ import Profile from './pages/Profile'
 import MapView from './pages/MapView'
 import Navbar from './components/ui/Navbar'
 import BottomNav from './components/ui/BottomNav'
+import InstallPrompt from './components/ui/InstallPrompt'
 import { AnimatePresence, motion } from 'framer-motion'
 import { properties } from './data/mockData'
 
@@ -110,6 +111,8 @@ function App() {
       </AnimatePresence>
 
       {showNavBars && <BottomNav onNavigate={handleNavigate} currentView={currentView} />}
+      
+      <InstallPrompt />
     </div>
   )
 }
