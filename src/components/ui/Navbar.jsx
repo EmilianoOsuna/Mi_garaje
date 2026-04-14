@@ -302,7 +302,7 @@ const Navbar = ({ onNavigate }) => (
     <div className="max-w-7xl mx-auto flex items-center justify-between">
       {/* Logo */}
       <div className="flex items-center gap-2 cursor-pointer" onClick={() => onNavigate('home')}>
-        <img src="/logo.png" alt="Mi Garaje Logo" className="h-9 w-auto object-contain md:h-10" />
+        <img src="/logo.webp" alt="Mi Garaje Logo" className="h-9 w-auto object-contain md:h-10" />
         <span className="font-extrabold text-lg tracking-tight text-brand-on-surface md:text-xl">Mi Garaje</span>
       </div>
 

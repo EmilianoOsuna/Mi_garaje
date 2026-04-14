@@ -1,16 +1,16 @@
 // Each property uses a unique, locally-stored image asset
-import sczImg    from '../assets/scz.png';      // Santa Cruz street garage
-import lpzImg    from '../assets/lpz.png';      // La Paz Titanium building
-import cbbaImg   from '../assets/cbba.png';     // Cochabamba Sirari
-import cbba2Img  from '../assets/cbba2.png';    // Cochabamba Parking Privado
-import storageImg  from '../assets/storage.png';   // Storage unit 1
-import scz2Img   from '../assets/scz2.png';     // Santa Cruz rooftop
-import lpz2Img   from '../assets/lpz2.png';     // La Paz underground
-import cbba3Img  from '../assets/cbba3.png';    // Cochabamba Recoleta
-import storage2Img from '../assets/storage2.png';  // Baulera Achumani
-import lpz3Img   from '../assets/lpz3.png';     // La Paz Miraflores
-import storage3Img from '../assets/storage3.png';  // Baulera Los Sauces
-import cbba4Img  from '../assets/cbba4.png';    // Cochabamba El Prado
+import sczImg    from '../assets/scz.webp';      // Santa Cruz street garage
+import lpzImg    from '../assets/lpz.webp';      // La Paz Titanium building
+import cbbaImg   from '../assets/cbba.webp';     // Cochabamba Sirari
+import cbba2Img  from '../assets/cbba2.webp';    // Cochabamba Parking Privado
+import storageImg  from '../assets/storage.webp';   // Storage unit 1
+import scz2Img   from '../assets/scz2.webp';     // Santa Cruz rooftop
+import lpz2Img   from '../assets/lpz2.webp';     // La Paz underground
+import cbba3Img  from '../assets/cbba3.webp';    // Cochabamba Recoleta
+import storage2Img from '../assets/storage2.webp';  // Baulera Achumani
+import lpz3Img   from '../assets/lpz3.webp';     // La Paz Miraflores
+import storage3Img from '../assets/storage3.webp';  // Baulera Los Sauces
+import cbba4Img  from '../assets/cbba4.webp';    // Cochabamba El Prado
 
 export const properties = [
   // ── La Paz ──────────────────────────────────────────────────────────────

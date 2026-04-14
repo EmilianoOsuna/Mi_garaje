@@ -1,7 +1,7 @@
 import React from 'react';
 import { Calendar, MapPin, Clock, ChevronRight, CheckCircle2 } from 'lucide-react';
-import lpzImg from '../assets/lpz.png';
-import sczImg from '../assets/scz.png';
+import lpzImg from '../assets/lpz.webp';
+import sczImg from '../assets/scz.webp';
 
 const Reservations = () => {
   const currentReservations = [
