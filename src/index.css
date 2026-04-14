@@ -1,0 +1,88 @@
+@import "leaflet/dist/leaflet.css";
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #d34027;
+  /* Terracotta from Logo */
+  --color-primary-container: #ea580c;
+  /* Warmer orange-red */
+  --color-secondary: #4a5568;
+  /* Slate grey from Logo */
+  --color-surface: #fdfbf7;
+  /* Warm off-white */
+  --color-surface-container-low: #f5f1ea;
+  --color-surface-container-lowest: #ffffff;
+  --color-brand-on-surface: #1a202c;
+  --color-brand-on-surface-variant: #4a5568;
+  --color-primary-hover: #b91c1c;
+  --color-primary-active: #9b1515;
+
+  --font-manrope: "Manrope", sans-serif;
+
+  --shadow-ambient: 0 10px 40px rgba(211, 64, 39, 0.04);
+  --shadow-premium: 0 20px 50px rgba(211, 64, 39, 0.08);
+
+  --radius-brand: 1rem;
+}
+
+@layer base {
+  html {
+    padding-left: env(safe-area-inset-left, 0px);
+    padding-right: env(safe-area-inset-right, 0px);
+  }
+
+  button,
+  [role="button"],
+  input[type="submit"],
+  input[type="button"],
+  input[type="reset"] {
+    touch-action: manipulation;
+  }
+
+  body {
+    font-family: var(--font-manrope);
+    background-color: var(--color-surface);
+    color: var(--color-brand-on-surface);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@utility glass {
+  background-color: rgb(255 255 255 / 0.8);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgb(211 64 39 / 0.05);
+  box-shadow: var(--shadow-ambient);
+}
+
+@utility btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+  font-weight: 800;
+  border-radius: 1rem;
+  padding: 0.875rem 1.5rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 10px 30px rgba(211, 64, 39, 0.2);
+
+  &:hover {
+    background-color: #b91c1c;
+    transform: translateY(-2px);
+    box-shadow: 0 15px 35px rgba(211, 64, 39, 0.3);
+  }
+}
+
+@utility no-scrollbar {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Leaflet map container fix */
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
