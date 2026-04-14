@@ -13,7 +13,7 @@ export default defineConfig({
       includeAssets: ['favicon.svg', 'apple-touch-icon.png', 'maskable-icon.png'],
       manifest: {
         name: 'Mi Garaje',
-        short_name: 'Garaje',
+        short_name: 'Mi Garaje',
         description: 'Encuentra y reserva garajes y depósitos en Bolivia.',
         theme_color: '#d34027',
         background_color: '#fdfbf7',
