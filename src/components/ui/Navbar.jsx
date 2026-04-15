@@ -100,8 +100,9 @@ const NotificationsDropdown = ({ onNavigate }) => {
             initial="hidden"
             animate="visible"
             exit="exit"
-            className="absolute right-0 top-full mt-3 w-80 bg-white rounded-3xl shadow-2xl border border-gray-100 overflow-hidden z-[200] origin-top-right"
+            className="absolute right-0 top-full mt-3 w-80 z-[200] origin-top-right"
           >
+          <div className="bg-white rounded-3xl shadow-2xl border border-gray-100 overflow-hidden">
             {/* Header */}
             <div className="flex items-center justify-between px-5 py-4 border-b border-gray-50">
               <div>
@@ -128,7 +129,7 @@ const NotificationsDropdown = ({ onNavigate }) => {
             </div>
 
             {/* Items */}
-            <ul className="divide-y divide-gray-50 max-h-72 overflow-y-auto">
+            <ul className="divide-y divide-gray-50 max-h-72 overflow-y-auto overflow-x-hidden">
               {items.map((n, i) => (
                 <motion.li
                   key={n.id}
@@ -164,6 +165,7 @@ const NotificationsDropdown = ({ onNavigate }) => {
                 Ver todas las reservas →
               </button>
             </div>
+          </div>
           </motion.div>
         )}
       </AnimatePresence>
