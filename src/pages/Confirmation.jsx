@@ -27,7 +27,7 @@ const Confirmation = ({ property, onBack, onFinish }) => {
     <div className="min-h-screen bg-[#fdfbf7] font-manrope pb-20">
       <div className="fixed top-0 left-0 w-full h-32 bg-gradient-to-b from-primary/5 to-transparent pointer-events-none"></div>
 
-      <header className="bg-white/80 backdrop-blur-xl border-b border-gray-100 px-6 py-5 flex items-center justify-between sticky top-0 z-50">
+      <header className="bg-white/80 backdrop-blur-xl border-b border-gray-100 px-6 pb-5 pt-[calc(env(safe-area-inset-top)+1.25rem)] flex items-center justify-between sticky top-0 z-50">
         <div className="flex items-center gap-4 max-w-7xl mx-auto w-full">
             <button 
                 onClick={onBack}

@@ -47,7 +47,7 @@ const Home = ({ onSelectProperty, onNavigate }) => {
 
   return (
     <div className="min-h-screen bg-[#fdfbf7] font-manrope relative">
-      <main className="pt-24 px-5 max-w-7xl mx-auto pb-32">
+      <main className="px-5 max-w-7xl mx-auto pb-32 pt-[calc(env(safe-area-inset-top)+6rem)]">
         {/* Desktop Layout Split: Hero + Search */}
         <div className="flex flex-col lg:flex-row gap-10 mb-12 items-start">
           <section className="flex-1">

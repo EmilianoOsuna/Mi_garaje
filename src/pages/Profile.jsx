@@ -3,7 +3,7 @@ import { User, Shield, CreditCard, Bell, HelpCircle, LogOut, ChevronRight, Check
 
 const Profile = () => {
     return (
-        <div className="min-h-screen bg-[#fdfbf7] pt-24 pb-32 font-manrope">
+        <div className="min-h-screen bg-[#fdfbf7] pb-32 pt-[calc(env(safe-area-inset-top)+6rem)] font-manrope">
             <div className="max-w-3xl mx-auto px-6">
 
                 {/* Profile Header */}

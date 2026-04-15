@@ -29,7 +29,7 @@ const Reservations = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#fdfbf7] pt-24 pb-32 font-manrope">
+    <div className="min-h-screen bg-[#fdfbf7] pb-32 pt-[calc(env(safe-area-inset-top)+6rem)] font-manrope">
       <div className="max-w-4xl mx-auto px-6">
         <header className="mb-10">
           <h1 className="text-3xl font-black text-brand-on-surface tracking-tight mb-2">Mis Reservas</h1>

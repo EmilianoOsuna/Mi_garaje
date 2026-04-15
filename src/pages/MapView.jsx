@@ -91,7 +91,7 @@ const MapView = ({ properties, onBack, onSelectProperty }) => {
     <div style={{ position: 'fixed', inset: 0, overflow: 'hidden', fontFamily: 'Manrope, sans-serif' }}>
       {/* Floating Header */}
       <header
-        style={{ position: 'absolute', top: 24, left: 20, right: 20, zIndex: 1000 }}
+        style={{ position: 'absolute', top: 'calc(env(safe-area-inset-top) + 24px)', left: 20, right: 20, zIndex: 1000 }}
         className="flex items-center justify-between pointer-events-none"
       >
         <button

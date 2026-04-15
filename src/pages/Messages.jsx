@@ -81,7 +81,7 @@ const ChatThread = ({ chat, onBack }) => {
     <div className="flex flex-col font-manrope bg-[#fdfbf7]" style={{ height: '100dvh' }}>
 
       {/* Header — sits at very top, safe padding for status bar on mobile */}
-      <header className="flex items-center gap-3 px-4 pt-14 pb-3 bg-white/90 backdrop-blur-xl border-b border-gray-100 shadow-sm shrink-0">
+      <header className="flex items-center gap-3 px-4 pb-3 pt-[calc(env(safe-area-inset-top)+1rem)] bg-white/90 backdrop-blur-xl border-b border-gray-100 shadow-sm shrink-0">
         <button
           onClick={onBack}
           className="w-10 h-10 rounded-2xl bg-gray-50 border border-gray-100 flex items-center justify-center active:scale-95 transition-all shrink-0"
@@ -183,7 +183,7 @@ const Messages = ({ activeChat, setActiveChat }) => {
   }
 
   return (
-    <div className="min-h-screen bg-[#fdfbf7] pt-24 pb-32 font-manrope">
+    <div className="min-h-screen bg-[#fdfbf7] pb-32 pt-[calc(env(safe-area-inset-top)+6rem)] font-manrope">
       <div className="max-w-3xl mx-auto px-6">
         <header className="mb-10 flex justify-between items-center">
           <div>

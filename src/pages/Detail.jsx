@@ -5,7 +5,7 @@ const Detail = ({ onBack, onReserve, property }) => {
   return (
     <div className="min-h-screen bg-[#fdfbf7] pb-32 font-manrope">
       {/* Floating Header (Always visible) */}
-      <div className="fixed top-6 left-5 right-5 flex justify-between items-center z-50 max-w-7xl mx-auto lg:px-5">
+      <div className="fixed top-[calc(env(safe-area-inset-top)+1.5rem)] left-5 right-5 flex justify-between items-center z-50 max-w-7xl mx-auto lg:px-5">
         <button 
           onClick={onBack}
           className="w-10 h-10 bg-white/90 backdrop-blur-md rounded-xl flex items-center justify-center shadow-lg active:scale-95 transition-all text-brand-on-surface border border-gray-100"
