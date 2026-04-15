@@ -81,7 +81,7 @@ const InstallPrompt = () => {
                             <Download className="w-6 h-6 text-primary" />
                         </div>
                         <div className="flex-1 pr-6">
-                            <h4 className="font-extrabold text-sm mb-1 uppercase tracking-tight">Instalar Garaje</h4>
+                            <h4 className="font-extrabold text-sm mb-1 uppercase tracking-tight">Instalar Mi Garaje</h4>
                             <p className="text-[11px] text-white/70 leading-relaxed">
                                 {isIOS 
                                     ? 'Toca el botón "Compartir" y luego "Agregar a inicio" para una experiencia inmaculada.' 
